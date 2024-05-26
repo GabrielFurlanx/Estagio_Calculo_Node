@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f29d00;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.user {
+    font-size: 1em;
+}
+
+aside {
+    width: 250px;
+    background-color: #3e3e3e;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    display: none;
+    flex-direction: column;
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside nav ul li {
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    padding: 10px;
+    background-color: #585858;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.submenu li {
+    background-color: #4a4a4a;
+    margin-bottom: 5px;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

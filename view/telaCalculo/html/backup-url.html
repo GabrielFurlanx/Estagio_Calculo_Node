@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela com Descrição e Valores</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body>
+
+    <p>DA PARA ESCREVER?</p>
+
+    <p id="Inputvalor1_0"></p>
+    <div id="meuElemento"></div>
+
+
+<div class="container">
+    <form id="register-form" onsubmit="return cadastrarDados(event)">
+  <table id="tabela-principal">
+    <thead>
+      <tr>
+        <th rowspan="1"></th>
+        <th colspan="2">Criança</th>
+        <th colspan="2">Pai/Mãe</th>
+        <th class="hidden-column">mesma linha</th>
+        <th class="hidden-column">mesma linha</th>
+        <th class="hidden-column">campo1=campo3</th>
+        <th class="hidden-column">campo1=campo4</th>
+        <th class="hidden-column">campo2=campo3</th>
+        <th class="hidden-column">campo2=campo4</th>
+        <th class="hidden-column">Soma 1</th>
+        <th class="hidden-column">Soma 2</th>
+        <th class="hidden-column">Soma 3</th>
+        <th class="hidden-column">Exclusão</th>
+        <th class="hidden-column">Soma Final</th>
+        <th class="hidden-column">Comparar 1</th>
+        <th class="hidden-column">Comparar 2</th>
+        <th class="hidden-column">Transportar 1</th>
+        <th class="hidden-column">Transportar 2</th>
+        <th>Índice</th>
+        <th class="hidden-column">Transportar 3</th>
+        <th class="hidden-column">ÉNãoDisp</th>
+        <th class="hidden-column">Transportar Final</th>
+        <th class="hidden-column">IPA</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>D8S1179</td>
+            <td id="Inputvalor1_0"><input class="valor" /></td>
+            <td id="Inputvalor2_0"><input class="valor" /></td>
+            <td id="Inputvalor3_0"><input class="valor" /></td>
+            <td id="Inputvalor4_0"><input class="valor" /></td>
+            <td class="resultado1 hidden-column"></td>
+            <td class="resultado2 hidden-column"></td>
+            <td class="resultado3 hidden-column"></td>
+            <td class="resultado4 hidden-column"></td>
+            <td class="resultado5 hidden-column"></td>
+            <td class="resultado6 hidden-column"></td>
+            <td class="soma1 hidden-column"></td>
+            <td class="soma2 hidden-column"></td>
+            <td class="soma3 hidden-column"></td>
+            <td class="exclusao hidden-column"></td>
+            <td class="somaFinal hidden-column"></td>
+            <td class="comparar1 hidden-column"></td>
+            <td class="comparar2 hidden-column"></td>
+            <td class="transportar1 hidden-column"></td>
+            <td class="transportar2 hidden-column"></td>
+            <td id="indice0" class="indice"></td>
+            <td class="transportar3 hidden-column"></td>
+            <td class="éNãoDisp hidden-column"></td>
+            <td class="transportarFinal hidden-column"></td>
+            <td class="ipa hidden-column"></td> 
+        </tr>
+        </tbody>
+
+
+        <tr>
+            <td>IP Acumulado</td>
+            <td id="ipaFinal" colspan="24" class="ipa_final"></td>
+        </tr>
+
+        <tr>
+            <td>PP</td>
+            <td id="ppFinal" colspan="24" class="porcentagem_ipa_final"></td>
+        </tr>
+
+
+        
+
+    </table>
+    <button type="submit">Enviar</button>
+</form>
+    <script src="../javascript/script.js"></script>
+</div>
+
+<p class="input1"></p>
+<p class="input2"></p>
+<p class="input3"></p>
+<p class="input4"></p>
+<p class="indice0"></p>
+<p class="ipaFinal">Placeholder</p>
+<p class="">Placeholder</p>
+
+
+<button onclick="redirecionarParaGerar()">Ir para Gerar</button>
+
+
+<button onclick="enviarValores()">Enviar Valores</button>
+
+<script>
+    // Função para enviar os valores das classes via URL
+    function enviarValores() {
+        var input1 = document.querySelector('.input1').innerText;
+        var input2 = document.querySelector('.input2').innerText;
+        var input3 = document.querySelector('.input3').innerText;
+        var input4 = document.querySelector('.input4').innerText;
+        var indice0 = document.querySelector('.indice0').innerText;
+
+        // Montar a URL com os valores
+        var url = "./html/gerar.html?" +
+            "input1=" + encodeURIComponent(input1) +
+            "&input2=" + encodeURIComponent(input2) +
+            "&input3=" + encodeURIComponent(input3) +
+            "&input4=" + encodeURIComponent(input4) +
+            "&indice0=" + encodeURIComponent(indice0);
+
+        // Redirecionar para a URL com os parâmetros
+        window.location.href = url;
+    }
+
+
+    function redirecionarParaGerar() {
+        window.location.href = "./html/gerar.html";
+    }
+
+</script>
+</body>
+</html>
+                                    
+        
+

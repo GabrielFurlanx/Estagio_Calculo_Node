@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Destino</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 50%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    input {
+        width: calc(100% - 16px); /* Considerando o padding de 8px em cada lado */
+        box-sizing: border-box;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Alinha verticalmente */
+        height: 100vh; /* Altura total da tela */
+    }
+    
+    
+    
+    </style>
+<body>
+    <h1>Valores Recebidos:</h1>
+    
+    
+    
+    
+    
+
+    <div class="container">
+        <table id="nova-tabela">
+          <thead>
+            <tr>
+              <th width="10%"></th>
+              <th colspan="2">Criança</th>
+              <th colspan="2">Pai/Mãe</th>
+              <th>Índice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+        <tr>
+            <td>D8S1179</td>
+            <td id="valorInput1"><p id="valorInput1"></p></td>
+            <td id="valorInput2"><p id="valorInput2"></p></td>
+            <td id="valorInput3"><p id="valorInput3"></p></td>
+            <td id="valorInput4"><p id="valorInput4"></p></td>
+            <td id="valorIndice0"><p id="valorIndice0"></p></td>
+        </tr>
+            <tr>
+              <td>D21S11</td>
+              <td id="valorInput1_1"><p id="valorInput1_1"></p></td>
+              <td id="valorInput2_1"><p id="valorInput2_1"></p></td>
+              <td id="valorInput3_1"><p id="valorInput3_1"></p></td>
+              <td id="valorInput4_1"><p id="valorInput4_1"></p></td>
+              <td id="valorIndice1"><p id="valorIndice1"></p></td>
+            </tr>
+            
+            <tr>
+                <td>D7S820</td>
+                <td id="valorInput1_2"><p id="valorInput1_2"></p></td>
+                <td id="valorInput2_2"><p id="valorInput2_2"></p></td>
+                <td id="valorInput3_2"><p id="valorInput3_2"></p></td>
+                <td id="valorInput4_2"><p id="valorInput4_2"></p></td>
+                <td id="valorIndice2"><p id="valorIndice2"></p></td>
+              </tr>
+        
+              <tr>
+                <td>CSF1PO</td>
+                <td id="valorInput1_3"><p id="valorInput1_3"></p></td>
+                <td id="valorInput2_3"><p id="valorInput2_3"></p></td>
+                <td id="valorInput3_3"><p id="valorInput3_3"></p></td>
+                <td id="valorInput4_3"><p id="valorInput4_3"></p></td>
+                <td id="valorIndice3"><p id="valorIndice3"></p></td>
+              </tr>
+        
+              <tr>
+                <td>D3S1358</td>
+                <td id="valorInput1_4"><p id="valorInput1_4"></p></td>
+                <td id="valorInput2_4"><p id="valorInput2_4"></p></td>
+                <td id="valorInput3_4"><p id="valorInput3_4"></p></td>
+                <td id="valorInput4_4"><p id="valorInput4_4"></p></td>
+                <td id="valorIndice4"><p id="valorIndice4"></p></td>
+              </tr>
+        
+              <tr>
+                <td>THO1</td>
+                <td id="valorInput1_5"><p id="valorInput1_5"></p></td>
+                <td id="valorInput2_5"><p id="valorInput2_5"></p></td>
+                <td id="valorInput3_5"><p id="valorInput3_5"></p></td>
+                <td id="valorInput4_5"><p id="valorInput4_5"></p></td>
+                <td id="valorIndice5"><p id="valorIndice5"></p></td>
+              </tr>
+        
+              <tr>
+                <td>D13S317</td>
+                <td id="valorInput1_6"><p id="valorInput1_6"></p></td>
+                <td id="valorInput2_6"><p id="valorInput2_6"></p></td>
+                <td id="valorInput3_6"><p id="valorInput3_6"></p></td>
+                <td id="valorInput4_6"><p id="valorInput4_6"></p></td>
+                <td id="valorIndice6"><p id="valorIndice6"></p></td>
+              </tr>
+        
+              <tr>
+                <td>D16S539</td>
+                <td id="valorInput1_7"><p id="valorInput1_7"></p></td>
+                <td id="valorInput2_7"><p id="valorInput2_7"></p></td>
+                <td id="valorInput3_7"><p id="valorInput3_7"></p></td>
+                <td id="valorInput4_7"><p id="valorInput4_7"></p></td>
+                <td id="valorIndice7"><p id="valorIndice7"></p></td>
+              </tr>
+        
+              <tr>
+                <td>D2S1338</td>
+                <td id="valorInput1_8"><p id="valorInput1_8"></p></td>
+                <td id="valorInput2_8"><p id="valorInput2_8"></p></td>
+                <td id="valorInput3_8"><p id="valorInput3_8"></p></td>
+                <td id="valorInput4_8"><p id="valorInput4_8"></p></td>
+                <td id="valorIndice8"><p id="valorIndice8"></p></td>
+              </tr>
+        
+              <tr>
+                <td>D19S433</td>
+                <td id="valorInput1_9"><p id="valorInput1_9"></p></td>
+                <td id="valorInput2_9"><p id="valorInput2_9"></p></td>
+                <td id="valorInput3_9"><p id="valorInput3_9"></p></td>
+                <td id="valorInput4_9"><p id="valorInput4_9"></p></td>
+                <td id="valorIndice9"><p id="valorIndice9"></p></td>
+              </tr>
+        
+              <tr>
+                <td>VWA</td>
+                <td id="valorInput1_10"><p id="valorInput1_10"></p></td>
+                <td id="valorInput2_10"><p id="valorInput2_10"></p></td>
+                <td id="valorInput3_10"><p id="valorInput3_10"></p></td>
+                <td id="valorInput4_10"><p id="valorInput4_10"></p></td>
+                <td id="valorIndice10"><p id="valorIndice10"></p></td>
+              </tr>
+        
+              <tr>
+                <td>TPOX</td>
+                <td id="valorInput1_11"><p id="valorInput1_11"></p></td>
+                <td id="valorInput2_11"><p id="valorInput2_11"></p></td>
+                <td id="valorInput3_11"><p id="valorInput3_11"></p></td>
+                <td id="valorInput4_11"><p id="valorInput4_11"></p></td>
+                <td id="valorIndice11"><p id="valorIndice11"></p></td>
+              </tr>
+        
+              <tr>
+                <td>D18S51</td>
+                <td id="valorInput1_12"><p id="valorInput1_12"></p></td>
+                <td id="valorInput2_12"><p id="valorInput2_12"></p></td>
+                <td id="valorInput3_12"><p id="valorInput3_12"></p></td>
+                <td id="valorInput4_12"><p id="valorInput4_12"></p></td>
+                <td id="valorIndice12"><p id="valorIndice12"></p></td>
+              </tr>
+        
+            <tr>
+              <td>D5S818</td>
+              <td id="valorInput1_13"><p id="valorInput1_13"></p></td>
+              <td id="valorInput2_13"><p id="valorInput2_13"></p></td>
+              <td id="valorInput3_13"><p id="valorInput3_13"></p></td>
+              <td id="valorInput4_13"><p id="valorInput4_13"></p></td>
+              <td id="valorIndice13"><p id="valorIndice13"></p></td>
+            </tr>
+        
+            <tr>
+                <td>FGA</td>
+                <td id="valorInput1_14"><p id="valorInput1_14"></p></td>
+                <td id="valorInput2_14"><p id="valorInput2_14"></p></td>
+                <td id="valorInput3_14"><p id="valorInput3_14"></p></td>
+                <td id="valorInput4_14"><p id="valorInput4_14"></p></td>
+                <td id="valorIndice14"><p id="valorIndice14"></p></td>
+              </tr>
+        
+          </tbody>
+        
+          <tr>
+            <td>IP Acumulado</td>
+            <td colspan="24" class="ipa_final"></td>
+        </tr>
+        
+        <tr>
+            <td>PP</td>
+            <td colspan="24" class="porcentagem_ipa_final"></td>
+        </tr>
+        
+        
+        
+        </table>
+        </div>
+
+
+
+  <p id="valorInput1"></p>
+  <p id="valorInput2"></p>
+  <p id="valorInput3"></p>
+  <p id="valorInput4"></p>
+  <p id="valorIndice0"></p>
+
+
+
+
+
+
+    
+    <script>
+    // Função para obter parâmetros da URL
+    function obterParametrosURL() {
+            var parametros = {};
+            var query = window.location.search.substring(1);
+            var pares = query.split("&");
+
+            for (var i = 0; i < pares.length; i++) {
+                var par = pares[i].split("=");
+                parametros[par[0]] = decodeURIComponent(par[1]);
+            }
+
+            return parametros;
+        }
+
+        // Receber os valores da URL
+        var parametros = obterParametrosURL();
+
+        // Armazenar os valores em variáveis
+        var valorInput1 = parametros["input1"];
+        var valorInput2 = parametros["input2"];
+        var valorInput3 = parametros["input3"];
+        var valorInput4 = parametros["input4"];
+        var valorIndice0 = parametros["indice0"];
+        var valorInput1_1 = parametros["input1_1"];
+        var valorInput2_1 = parametros["input2_1"];
+        var valorInput3_1 = parametros["input3_1"];
+        var valorInput4_1 = parametros["input4_1"];
+        var valorIndice1 = parametros["indice1"];
+        var valorInput1_2 = parametros["input1_2"];
+        var valorInput2_2 = parametros["input2_2"];
+        var valorInput3_2 = parametros["input3_2"];
+        var valorInput4_2 = parametros["input4_2"];
+        var valorIndice2 = parametros["indice2"];
+        var valorInput1_3 = parametros["input1_3"];
+        var valorInput2_3 = parametros["input2_3"];
+        var valorInput3_3 = parametros["input3_3"];
+        var valorInput4_3 = parametros["input4_3"];
+        var valorIndice3 = parametros["indice3"];
+        var valorInput1_4 = parametros["input1_4"];
+        var valorInput2_4 = parametros["input2_4"];
+        var valorInput3_4 = parametros["input3_4"];
+        var valorInput4_4 = parametros["input4_4"];
+        var valorIndice4 = parametros["indice4"];
+        var valorInput1_5 = parametros["input1_5"];
+        var valorInput2_5 = parametros["input2_5"];
+        var valorInput3_5 = parametros["input3_5"];
+        var valorInput4_5 = parametros["input4_5"];
+        var valorIndice5 = parametros["indice5"];
+        var valorInput1_6 = parametros["input1_6"];
+        var valorInput2_6 = parametros["input2_6"];
+        var valorInput3_6 = parametros["input3_6"];
+        var valorInput4_6 = parametros["input4_6"];
+        var valorIndice6 = parametros["indice6"];
+        var valorInput1_7 = parametros["input1_7"];
+        var valorInput2_7 = parametros["input2_7"];
+        var valorInput3_7 = parametros["input3_7"];
+        var valorInput4_7 = parametros["input4_7"];
+        var valorIndice7 = parametros["indice7"];
+        var valorInput1_8 = parametros["input1_8"];
+        var valorInput2_8 = parametros["input2_8"];
+        var valorInput3_8 = parametros["input3_8"];
+        var valorInput4_8 = parametros["input4_8"];
+        var valorIndice8 = parametros["indice8"];
+        var valorInput1_9 = parametros["input1_9"];
+        var valorInput2_9 = parametros["input2_9"];
+        var valorInput3_9 = parametros["input3_9"];
+        var valorInput4_9 = parametros["input4_9"];
+        var valorIndice9 = parametros["indice9"];
+        var valorInput1_10 = parametros["input1_10"];
+        var valorInput2_10 = parametros["input2_10"];
+        var valorInput3_10 = parametros["input3_10"];
+        var valorInput4_10 = parametros["input4_10"];
+        var valorIndice10 = parametros["indice10"];
+        var valorInput1_11 = parametros["input1_11"];
+        var valorInput2_11 = parametros["input2_11"];
+        var valorInput3_11 = parametros["input3_11"];
+        var valorInput4_11 = parametros["input4_11"];
+        var valorIndice11 = parametros["indice11"];
+        var valorInput1_12 = parametros["input1_12"];
+        var valorInput2_12 = parametros["input2_12"];
+        var valorInput3_12 = parametros["input3_12"];
+        var valorInput4_12 = parametros["input4_12"];
+        var valorIndice12 = parametros["indice12"];
+        var valorInput1_13 = parametros["input1_13"];
+        var valorInput2_13 = parametros["input2_13"];
+        var valorInput3_13 = parametros["input3_13"];
+        var valorInput4_13 = parametros["input4_13"];
+        var valorIndice13 = parametros["indice13"];
+        var valorInput1_14 = parametros["input1_14"];
+        var valorInput2_14 = parametros["input2_14"];
+        var valorInput3_14 = parametros["input3_14"];
+        var valorInput4_14 = parametros["input4_14"];
+        var valorIndice14 = parametros["indice14"];
+
+
+
+
+        // Exibir os valores recebidos na página
+        document.getElementById("valorInput1").innerText = valorInput1;
+        document.getElementById("valorInput2").innerText = valorInput2;
+        document.getElementById("valorInput3").innerText = valorInput3;
+        document.getElementById("valorInput4").innerText = valorInput4;
+        document.getElementById("valorIndice0").innerText = valorIndice0;
+        document.getElementById("valorInput1_1").innerText = valorInput1_1;
+        document.getElementById("valorInput2_1").innerText = valorInput2_1;
+        document.getElementById("valorInput3_1").innerText = valorInput3_1;
+        document.getElementById("valorInput4_1").innerText = valorInput4_1;
+        document.getElementById("valorIndice1").innerText = valorIndice1;
+        document.getElementById("valorInput1_2").innerText = valorInput1_2;
+        document.getElementById("valorInput2_2").innerText = valorInput2_2;
+        document.getElementById("valorInput3_2").innerText = valorInput3_2;
+        document.getElementById("valorInput4_2").innerText = valorInput4_2;
+        document.getElementById("valorIndice2").innerText = valorIndice2;
+        document.getElementById("valorInput1_3").innerText = valorInput1_3;
+        document.getElementById("valorInput2_3").innerText = valorInput2_3;
+        document.getElementById("valorInput3_3").innerText = valorInput3_3;
+        document.getElementById("valorInput4_3").innerText = valorInput4_3;
+        document.getElementById("valorIndice3").innerText = valorIndice3;
+        document.getElementById("valorInput1_3").innerText = valorInput1_3;
+        document.getElementById("valorInput2_3").innerText = valorInput2_3;
+        document.getElementById("valorInput3_3").innerText = valorInput3_3;
+        document.getElementById("valorInput4_3").innerText = valorInput4_3;
+        document.getElementById("valorIndice3").innerText = valorIndice3;
+        document.getElementById("valorInput1_4").innerText = valorInput1_4;
+        document.getElementById("valorInput2_4").innerText = valorInput2_4;
+        document.getElementById("valorInput3_4").innerText = valorInput3_4;
+        document.getElementById("valorInput4_4").innerText = valorInput4_4;
+        document.getElementById("valorIndice4").innerText = valorIndice4;
+        document.getElementById("valorInput1_5").innerText = valorInput1_5;
+        document.getElementById("valorInput2_5").innerText = valorInput2_5;
+        document.getElementById("valorInput3_5").innerText = valorInput3_5;
+        document.getElementById("valorInput4_5").innerText = valorInput4_5;
+        document.getElementById("valorIndice5").innerText = valorIndice5;
+        document.getElementById("valorInput1_6").innerText = valorInput1_6;
+        document.getElementById("valorInput2_6").innerText = valorInput2_6;
+        document.getElementById("valorInput3_6").innerText = valorInput3_6;
+        document.getElementById("valorInput4_6").innerText = valorInput4_6;
+        document.getElementById("valorIndice6").innerText = valorIndice6;
+        document.getElementById("valorInput1_7").innerText = valorInput1_7;
+        document.getElementById("valorInput2_7").innerText = valorInput2_7;
+        document.getElementById("valorInput3_7").innerText = valorInput3_7;
+        document.getElementById("valorInput4_7").innerText = valorInput4_7;
+        document.getElementById("valorIndice7").innerText = valorIndice7;
+        document.getElementById("valorInput1_8").innerText = valorInput1_8;
+        document.getElementById("valorInput2_8").innerText = valorInput2_8;
+        document.getElementById("valorInput3_8").innerText = valorInput3_8;
+        document.getElementById("valorInput4_8").innerText = valorInput4_8;
+        document.getElementById("valorIndice8").innerText = valorIndice8;
+        document.getElementById("valorInput1_9").innerText = valorInput1_9;
+        document.getElementById("valorInput2_9").innerText = valorInput2_9;
+        document.getElementById("valorInput3_9").innerText = valorInput3_9;
+        document.getElementById("valorInput4_9").innerText = valorInput4_9;
+        document.getElementById("valorIndice9").innerText = valorIndice9;
+        document.getElementById("valorInput1_10").innerText = valorInput1_10;
+        document.getElementById("valorInput2_10").innerText = valorInput2_10;
+        document.getElementById("valorInput3_10").innerText = valorInput3_10;
+        document.getElementById("valorInput4_10").innerText = valorInput4_10;
+        document.getElementById("valorIndice10").innerText = valorIndice10;
+        document.getElementById("valorInput1_11").innerText = valorInput1_11;
+        document.getElementById("valorInput2_11").innerText = valorInput2_11;
+        document.getElementById("valorInput3_11").innerText = valorInput3_11;
+        document.getElementById("valorInput4_11").innerText = valorInput4_11;
+        document.getElementById("valorIndice11").innerText = valorIndice11;
+        document.getElementById("valorInput1_12").innerText = valorInput1_12;   
+        document.getElementById("valorInput2_12").innerText = valorInput2_12;
+        document.getElementById("valorInput3_12").innerText = valorInput3_12;
+        document.getElementById("valorInput4_12").innerText = valorInput4_12;
+        document.getElementById("valorIndice12").innerText = valorIndice12;
+        document.getElementById("valorInput1_13").innerText = valorInput1_13;
+        document.getElementById("valorInput2_13").innerText = valorInput2_13;
+        document.getElementById("valorInput3_13").innerText = valorInput3_13;
+        document.getElementById("valorInput4_13").innerText = valorInput4_13;
+        document.getElementById("valorIndice13").innerText = valorIndice13;
+        document.getElementById("valorInput1_14").innerText = valorInput1_14;
+        document.getElementById("valorInput2_14").innerText = valorInput2_14;
+        document.getElementById("valorInput3_14").innerText = valorInput3_14;
+        document.getElementById("valorInput4_14").innerText = valorInput4_14;
+        document.getElementById("valorIndice14").innerText = valorIndice14;
+
+    </script>
+</body>
+</html>

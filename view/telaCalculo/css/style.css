@@ -1,0 +1,41 @@
+table {
+    border-collapse: collapse;
+    width: 50%; /* Defina a largura da tabela como 50% da largura do contêiner pai */
+    margin: 0 auto; /* Centraliza a tabela horizontalmente na página */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.indice {
+    width: 100px; /* Ajuste o valor conforme necessário */
+}
+
+
+input {
+    width: 100%; /* Defina a largura dos inputs como 100% da largura da célula */
+    box-sizing: border-box;
+}
+
+.hidden-column {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+.buttons {
+    text-align: center; /* Centraliza os botões horizontalmente */
+    margin-top: 10px; /* Adiciona um espaçamento superior */
+}

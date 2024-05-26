@@ -1,0 +1,84 @@
+Criar a base de dados "parenteste"
+
+### CREATE DATABASE parenteste CHARACTER SER utf8mb4 COLLATE utf8mb4_unicode_ci
+
+Cria a migrations no caso é users:
+
+### npx sequelize-cli migration:generate --name create-users
+
+
+Alterar a migrations no caso é users:
+
+### npx sequelize-cli migration:generate --name alter-users
+ 
+Executar as migrations:
+
+### npx sequelize-cli db:migrate
+
+
+Executar as seeders:
+ 
+### npx sequelize-cli db:seed:all
+
+
+Executar down - rollback
+
+### npx sequelize-cli db:migrate:undo --name nome-da-migrations
+
+
+
+
+Comando para criar as models(conversa com o banco de dados) ira criar o Users
+
+### npx sequelize-cli model:generate --name Users --attributes name:string,email:string,image:string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// Incluir a dependência MySQL
+const mysql = require('mysql2');
+
+// Criar a conexão com o banco de dados MySQL
+
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'parenteste'
+});
+
+connection.connect(function(err){
+    console.log("Conexão com o banco de dados realizado com sucesso!");
+})
+
+
+
+connection.query("SELECT * FROM usuario", function(err, rows, fields){
+    if(!err){
+        console.log("Resultado", rows);
+    }else{
+        console.log("Erro: Consulta não realizada com sucesso")
+    }  
+});
+
+*/
+
+
+
+
+
+

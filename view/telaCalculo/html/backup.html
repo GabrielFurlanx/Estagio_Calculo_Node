@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela com Descrição e Valores</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body>
+
+    <p>DA PARA ESCREVER?</p>
+
+    <p id="Inputvalor1_0"></p>
+    <div id="meuElemento"></div>
+
+
+<div class="container">
+    <form id="register-form" onsubmit="return cadastrarDados(event)">
+  <table id="tabela-principal">
+    <thead>
+      <tr>
+        <th rowspan="1"></th>
+        <th colspan="2">Criança</th>
+        <th colspan="2">Pai/Mãe</th>
+        <th class="hidden-column">mesma linha</th>
+        <th class="hidden-column">mesma linha</th>
+        <th class="hidden-column">campo1=campo3</th>
+        <th class="hidden-column">campo1=campo4</th>
+        <th class="hidden-column">campo2=campo3</th>
+        <th class="hidden-column">campo2=campo4</th>
+        <th class="hidden-column">Soma 1</th>
+        <th class="hidden-column">Soma 2</th>
+        <th class="hidden-column">Soma 3</th>
+        <th class="hidden-column">Exclusão</th>
+        <th class="hidden-column">Soma Final</th>
+        <th class="hidden-column">Comparar 1</th>
+        <th class="hidden-column">Comparar 2</th>
+        <th class="hidden-column">Transportar 1</th>
+        <th class="hidden-column">Transportar 2</th>
+        <th>Índice</th>
+        <th class="hidden-column">Transportar 3</th>
+        <th class="hidden-column">ÉNãoDisp</th>
+        <th class="hidden-column">Transportar Final</th>
+        <th class="hidden-column">IPA</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>D8S1179</td>
+            <td id="Inputvalor1_0"><input class="valor" /></td>
+            <td id="Inputvalor2_0"><input class="valor" /></td>
+            <td id="Inputvalor3_0"><input class="valor" /></td>
+            <td id="Inputvalor4_0"><input class="valor" /></td>
+            <td class="resultado1 hidden-column"></td>
+            <td class="resultado2 hidden-column"></td>
+            <td class="resultado3 hidden-column"></td>
+            <td class="resultado4 hidden-column"></td>
+            <td class="resultado5 hidden-column"></td>
+            <td class="resultado6 hidden-column"></td>
+            <td class="soma1 hidden-column"></td>
+            <td class="soma2 hidden-column"></td>
+            <td class="soma3 hidden-column"></td>
+            <td class="exclusao hidden-column"></td>
+            <td class="somaFinal hidden-column"></td>
+            <td class="comparar1 hidden-column"></td>
+            <td class="comparar2 hidden-column"></td>
+            <td class="transportar1 hidden-column"></td>
+            <td class="transportar2 hidden-column"></td>
+            <td id="indice0" class="indice"></td>
+            <td class="transportar3 hidden-column"></td>
+            <td class="éNãoDisp hidden-column"></td>
+            <td class="transportarFinal hidden-column"></td>
+            <td class="ipa hidden-column"></td> 
+        </tr>
+        <tr>
+            <td>D21S11</td>
+            <td id="Inputvalor1_1"><input class="valor_1" /></td>
+            <td id="Inputvalor2_1"><input class="valor_1" /></td>
+            <td id="Inputvalor3_1"><input class="valor_1" /></td>
+            <td id="Inputvalor4_1"><input class="valor_1" /></td>
+            <td class="resultado1_1 hidden-column"></td>
+            <td class="resultado2_1 hidden-column"></td>
+            <td class="resultado3_1 hidden-column"></td>
+            <td class="resultado4_1 hidden-column"></td>
+            <td class="resultado5_1 hidden-column"></td>
+            <td class="resultado6_1 hidden-column"></td>
+            <td class="soma1_1 hidden-column"></td>
+            <td class="soma2_1 hidden-column"></td>
+            <td class="soma3_1 hidden-column"></td>
+            <td class="exclusao_1 hidden-column"></td>
+            <td class="somaFinal_1 hidden-column"></td>
+            <td class="comparar1_1 hidden-column"></td>
+            <td class="comparar2_1 hidden-column"></td>
+            <td class="transportar1_1 hidden-column"></td>
+            <td class="transportar2_1 hidden-column"></td>
+            <td id="indice1" class="indice_1"></td>
+            <td class="transportar3_1 hidden-column"></td>
+            <td class="éNãoDisp_1 hidden-column">
+            <td class="transportarFinal_1 hidden-column"></td>
+            <td class="ipa_1 hidden-column"></td> 
+        </tr>
+        <tr>
+            <td>D7S820</td>
+            <td id="Inputvalor1_2"><input class="valor_2" /></td>
+            <td id="Inputvalor2_2"><input class="valor_2" /></td>
+            <td id="Inputvalor3_2"><input class="valor_2" /></td>
+            <td id="Inputvalor4_2"><input class="valor_2" /></td>
+            <td class="resultado1_2 hidden-column"></td>
+            <td class="resultado2_2 hidden-column"></td>
+            <td class="resultado3_2 hidden-column"></td>
+            <td class="resultado4_2 hidden-column"></td>
+            <td class="resultado5_2 hidden-column"></td>
+            <td class="resultado6_2 hidden-column"></td>
+            <td class="soma1_2 hidden-column"></td>
+            <td class="soma2_2 hidden-column"></td>
+            <td class="soma3_2 hidden-column"></td>
+            <td class="exclusao_2 hidden-column"></td>
+            <td class="somaFinal_2 hidden-column"></td>
+            <td class="comparar1_2 hidden-column"></td>
+            <td class="comparar2_2 hidden-column"></td>
+            <td class="transportar1_2 hidden-column"></td>
+            <td class="transportar2_2 hidden-column"></td>
+            <td id="indice2" class="indice_2"></td>
+            <td class="transportar3_2 hidden-column"></td>
+            <td class="éNãoDisp_2 hidden-column"></td>
+            <td class="transportarFinal_2 hidden-column"></td>
+            <td class="ipa_2 hidden-column"></td>
+        </tr>
+        <tr>
+            <td>CSF1PO</td>
+            <td id="Inputvalor1_3"><input class="valor_3" /></td>
+            <td id="Inputvalor2_3"><input class="valor_3" /></td>
+            <td id="Inputvalor3_3"><input class="valor_3" /></td>
+            <td id="Inputvalor4_3"><input class="valor_3" /></td>
+            <td class="resultado1_3 hidden-column"></td>
+            <td class="resultado2_3 hidden-column"></td>
+            <td class="resultado3_3 hidden-column"></td>
+            <td class="resultado4_3 hidden-column"></td>
+            <td class="resultado5_3 hidden-column"></td>
+            <td class="resultado6_3 hidden-column"></td>
+            <td class="soma1_3 hidden-column"></td>
+            <td class="soma2_3 hidden-column"></td>
+            <td class="soma3_3 hidden-column"></td>
+            <td class="exclusao_3 hidden-column"></td>
+            <td class="somaFinal_3 hidden-column"></td>
+            <td class="comparar1_3 hidden-column"></td>
+            <td class="comparar2_3 hidden-column"></td>
+            <td class="transportar1_3 hidden-column"></td>
+            <td class="transportar2_3 hidden-column"></td>
+            <td id="indice3" class="indice_3"></td>
+            <td class="transportar3_3 hidden-column"></td>
+            <td class="éNãoDisp_3 hidden-column"></td>
+            <td class="transportarFinal_3 hidden-column"></td>
+            <td class="ipa_3 hidden-column"></td>
+        </tr>
+        <tr>
+            <td>D3S1358</td>
+            <td id="Inputvalor1_4"><input class="valor_4" /></td>
+            <td id="Inputvalor2_4"><input class="valor_4" /></td>
+            <td id="Inputvalor3_4"><input class="valor_4" /></td>
+            <td id="Inputvalor4_4"><input class="valor_4" /></td>
+            <td class="resultado1_4 hidden-column"></td>
+            <td class="resultado2_4 hidden-column"></td>
+            <td class="resultado3_4 hidden-column"></td>
+            <td class="resultado4_4 hidden-column"></td>
+            <td class="resultado5_4 hidden-column"></td>
+            <td class="resultado6_4 hidden-column"></td>
+            <td class="soma1_4 hidden-column"></td>
+            <td class="soma2_4 hidden-column"></td>
+            <td class="soma3_4 hidden-column"></td>
+            <td class="exclusao_4 hidden-column"></td>
+            <td class="somaFinal_4 hidden-column"></td>
+            <td class="comparar1_4 hidden-column"></td>
+            <td class="comparar2_4 hidden-column"></td>
+            <td class="transportar1_4 hidden-column"></td>
+            <td class="transportar2_4 hidden-column"></td>
+            <td id="indice4" class="indice_4"></td>
+            <td class="transportar3_4 hidden-column"></td>
+            <td class="éNãoDisp_4 hidden-column"></td>
+            <td class="transportarFinal_4 hidden-column"></td>
+            <td class="ipa_4 hidden-column"></td>
+        </tr>
+
+        <tr>
+            <td>THO1</td>
+            <td id="Inputvalor1_5"><input class="valor_5" /></td>
+            <td id="Inputvalor2_5"><input class="valor_5" /></td>
+            <td id="Inputvalor3_5"><input class="valor_5" /></td>
+            <td id="Inputvalor4_5"><input class="valor_5" /></td>
+            <td class="resultado1_5 hidden-column"></td>
+            <td class="resultado2_5 hidden-column"></td>
+            <td class="resultado3_5 hidden-column"></td>
+            <td class="resultado4_5 hidden-column"></td>
+            <td class="resultado5_5 hidden-column"></td>
+            <td class="resultado6_5 hidden-column"></td>
+            <td class="soma1_5 hidden-column"></td>
+            <td class="soma2_5 hidden-column"></td>
+            <td class="soma3_5 hidden-column"></td>
+            <td class="exclusao_5 hidden-column"></td>
+            <td class="somaFinal_5 hidden-column"></td>
+            <td class="comparar1_5 hidden-column"></td>
+            <td class="comparar2_5 hidden-column"></td>
+            <td class="transportar1_5 hidden-column"></td>
+            <td class="transportar2_5 hidden-column"></td>
+            <td id="indice5" class="indice_5"></td>
+            <td class="transportar3_5 hidden-column"></td>
+            <td class="éNãoDisp_5 hidden-column"></td>
+            <td class="transportarFinal_5 hidden-column"></td>
+            <td class="ipa_5 hidden-column"></td>
+        </tr>
+
+        <tr>
+            <td>D13S317</td>
+            <td id="Inputvalor1_6"><input class="valor_6" /></td>
+            <td id="Inputvalor2_6"><input class="valor_6" /></td>
+            <td id="Inputvalor3_6"><input class="valor_6" /></td>
+            <td id="Inputvalor4_6"><input class="valor_6" /></td>
+            <td class="resultado1_6 hidden-column"></td>
+            <td class="resultado2_6 hidden-column"></td>
+            <td class="resultado3_6 hidden-column"></td>
+            <td class="resultado4_6 hidden-column"></td>
+            <td class="resultado5_6 hidden-column"></td>
+            <td class="resultado6_6 hidden-column"></td>
+            <td class="soma1_6 hidden-column"></td>
+            <td class="soma2_6 hidden-column"></td>
+            <td class="soma3_6 hidden-column"></td>
+            <td class="exclusao_6 hidden-column"></td>
+            <td class="somaFinal_6 hidden-column"></td>
+            <td class="comparar1_6 hidden-column"></td>
+            <td class="comparar2_6 hidden-column"></td>
+            <td class="transportar1_6 hidden-column"></td>
+            <td class="transportar2_6 hidden-column"></td>
+            <td id="indice6" class="indice_6"></td>
+            <td class="transportar3_6 hidden-column"></td>
+            <td class="éNãoDisp_6 hidden-column"></td>
+            <td class="transportarFinal_6 hidden-column"></td>
+            <td class="ipa_6 hidden-column"></td>
+        </tr>
+
+        <tr>
+            <td>D16S539</td>
+            <td id="Inputvalor1_7"><input class="valor_7" /></td>
+            <td id="Inputvalor2_7"><input class="valor_7" /></td>
+            <td id="Inputvalor3_7"><input class="valor_7" /></td>
+            <td id="Inputvalor4_7"><input class="valor_7" /></td>
+            <td class="resultado1_7 hidden-column"></td>
+            <td class="resultado2_7 hidden-column"></td>
+            <td class="resultado3_7 hidden-column"></td>
+            <td class="resultado4_7 hidden-column"></td>
+            <td class="resultado5_7 hidden-column"></td>
+            <td class="resultado6_7 hidden-column"></td>
+            <td class="soma1_7 hidden-column"></td>
+            <td class="soma2_7 hidden-column"></td>
+            <td class="soma3_7 hidden-column"></td>
+            <td class="exclusao_7 hidden-column"></td>
+            <td class="somaFinal_7 hidden-column"></td>
+            <td class="comparar1_7 hidden-column"></td>
+            <td class="comparar2_7 hidden-column"></td>
+            <td class="transportar1_7 hidden-column"></td>
+            <td class="transportar2_7 hidden-column"></td>
+            <td id="indice7" class="indice_7"></td>
+            <td class="transportar3_7 hidden-column"></td>
+            <td class="éNãoDisp_7 hidden-column"></td>
+            <td class="transportarFinal_7 hidden-column"></td>
+            <td class="ipa_7 hidden-column"></td>
+        </tr>
+
+        <tr>
+            <td>D2S1338</td>
+            <td id="Inputvalor1_8"><input class="valor_8" /></td>
+            <td id="Inputvalor2_8"><input class="valor_8" /></td>
+            <td id="Inputvalor3_8"><input class="valor_8" /></td>
+            <td id="Inputvalor4_8"><input class="valor_8" /></td>
+            <td class="resultado1_8 hidden-column"></td>
+            <td class="resultado2_8 hidden-column"></td>
+            <td class="resultado3_8 hidden-column"></td>
+            <td class="resultado4_8 hidden-column"></td>
+            <td class="resultado5_8 hidden-column"></td>
+            <td class="resultado6_8 hidden-column"></td>
+            <td class="soma1_8 hidden-column"></td>
+            <td class="soma2_8 hidden-column"></td>
+            <td class="soma3_8 hidden-column"></td>
+            <td class="exclusao_8 hidden-column"></td>
+            <td class="somaFinal_8 hidden-column"></td>
+            <td class="comparar1_8 hidden-column"></td>
+            <td class="comparar2_8 hidden-column"></td>
+            <td class="transportar1_8 hidden-column"></td>
+            <td class="transportar2_8 hidden-column"></td>
+            <td id="indice8" class="indice_8"></td>
+            <td class="transportar3_8 hidden-column"></td>
+            <td class="éNãoDisp_8 hidden-column"></td>
+            <td class="transportarFinal_8 hidden-column"></td>
+            <td class="ipa_8 hidden-column"></td>
+            </tr>
+
+            <tr>
+                <td>D19S433</td>
+                <td id="Inputvalor1_9"><input class="valor_9" /></td>
+                <td id="Inputvalor2_9"><input class="valor_9" /></td>
+                <td id="Inputvalor3_9"><input class="valor_9" /></td>
+                <td id="Inputvalor4_9"><input class="valor_9" /></td>
+                <td class="resultado1_9 hidden-column"></td>
+                <td class="resultado2_9 hidden-column"></td>
+                <td class="resultado3_9 hidden-column"></td>
+                <td class="resultado4_9 hidden-column"></td>
+                <td class="resultado5_9 hidden-column"></td>
+                <td class="resultado6_9 hidden-column"></td>
+                <td class="soma1_9 hidden-column"></td>
+                <td class="soma2_9 hidden-column"></td>
+                <td class="soma3_9 hidden-column"></td>
+                <td class="exclusao_9 hidden-column"></td>
+                <td class="somaFinal_9 hidden-column"></td>
+                <td class="comparar1_9 hidden-column"></td>
+                <td class="comparar2_9 hidden-column"></td>
+                <td class="transportar1_9 hidden-column"></td>
+                <td class="transportar2_9 hidden-column"></td>
+                <td id="indice9" class="indice_9"></td>
+                <td class="transportar3_9 hidden-column"></td>
+                <td class="éNãoDisp_9 hidden-column"></td>
+                <td class="transportarFinal_9 hidden-column"></td>
+                <td class="ipa_9 hidden-column"></td>
+            </tr>
+
+            <tr>
+                <td>VWA</td>
+                <td id="Inputvalor1_10"><input class="valor_10" /></td>
+                <td id="Inputvalor2_10"><input class="valor_10" /></td>
+                <td id="Inputvalor3_10"><input class="valor_10" /></td>
+                <td id="Inputvalor4_10"><input class="valor_10" /></td>
+                <td class="resultado1_10 hidden-column"></td>
+                <td class="resultado2_10 hidden-column"></td>
+                <td class="resultado3_10 hidden-column"></td>
+                <td class="resultado4_10 hidden-column"></td>
+                <td class="resultado5_10 hidden-column"></td>
+                <td class="resultado6_10 hidden-column"></td>
+                <td class="soma1_10 hidden-column"></td>
+                <td class="soma2_10 hidden-column"></td>
+                <td class="soma3_10 hidden-column"></td>
+                <td class="exclusao_10 hidden-column"></td>
+                <td class="somaFinal_10 hidden-column"></td>
+                <td class="comparar1_10 hidden-column"></td>
+                <td class="comparar2_10 hidden-column"></td>
+                <td class="transportar1_10 hidden-column"></td>
+                <td class="transportar2_10 hidden-column"></td>
+                <td id="indice10" class="indice_10"></td>
+                <td class="transportar3_10 hidden-column"></td>
+                <td class="éNãoDisp_10 hidden-column"></td>
+                <td class="transportarFinal_10 hidden-column"></td>
+                <td class="ipa_10 hidden-column"></td>
+            </tr>
+
+            <tr>
+                <td>TPOX</td>
+                <td id="Inputvalor1_11"><input class="valor_11" /></td>
+                <td id="Inputvalor3_11"><input class="valor_11" /></td>
+                <td id="Inputvalor4_11"><input class="valor_11" /></td>
+                <td id="Inputvalor5_11"><input class="valor_11" /></td>
+                <td class="resultado1_11 hidden-column"></td>
+                <td class="resultado2_11 hidden-column"></td>
+                <td class="resultado3_11 hidden-column"></td>
+                <td class="resultado4_11 hidden-column"></td>
+                <td class="resultado5_11 hidden-column"></td>
+                <td class="resultado6_11 hidden-column"></td>
+                <td class="soma1_11 hidden-column"></td>
+                <td class="soma2_11 hidden-column"></td>
+                <td class="soma3_11 hidden-column"></td>
+                <td class="exclusao_11 hidden-column"></td>
+                <td class="somaFinal_11 hidden-column"></td>
+                <td class="comparar1_11 hidden-column"></td>
+                <td class="comparar2_11 hidden-column"></td>
+                <td class="transportar1_11 hidden-column"></td>
+                <td class="transportar2_11 hidden-column"></td>
+                <td id="indice11" class="indice_11"></td>
+                <td class="transportar3_11 hidden-column"></td>
+                <td class="éNãoDisp_11 hidden-column"></td>
+                <td class="transportarFinal_11 hidden-column"></td>
+                <td class="ipa_11 hidden-column"></td>
+            </tr>
+
+            <tr>
+                <td>D18S51</td>
+                <td id="Inputvalor1_12"><input class="valor_12" /></td>
+                <td id="Inputvalor2_12"><input class="valor_12" /></td>
+                <td id="Inputvalor3_12"><input class="valor_12" /></td>
+                <td id="Inputvalor4_12"><input class="valor_12" /></td>
+                <td class="resultado1_12 hidden-column"></td>
+                <td class="resultado2_12 hidden-column"></td>
+                <td class="resultado3_12 hidden-column"></td>
+                <td class="resultado4_12 hidden-column"></td>
+                <td class="resultado5_12 hidden-column"></td>
+                <td class="resultado6_12 hidden-column"></td>
+                <td class="soma1_12 hidden-column"></td>
+                <td class="soma2_12 hidden-column"></td>
+                <td class="soma3_12 hidden-column"></td>
+                <td class="exclusao_12 hidden-column"></td>
+                <td class="somaFinal_12 hidden-column"></td>
+                <td class="comparar1_12 hidden-column"></td>
+                <td class="comparar2_12 hidden-column"></td>
+                <td class="transportar1_12 hidden-column"></td>
+                <td class="transportar2_12 hidden-column"></td>
+                <td id="indice12" class="indice_12"></td>
+                <td class="transportar3_12 hidden-column"></td>
+                <td class="éNãoDisp_12 hidden-column"></td>
+                <td class="transportarFinal_12 hidden-column"></td>
+                <td class="ipa_12 hidden-column"></td>
+            </tr>
+
+            <tr>
+                <td>D5S818</td>
+                <td id="Inputvalor1_13"><input class="valor_13" /></td>
+                <td id="Inputvalor2_13"><input class="valor_13" /></td>
+                <td id="Inputvalor3_13"><input class="valor_13" /></td>
+                <td id="Inputvalor4_13"><input class="valor_13" /></td>
+                <td class="resultado1_13 hidden-column"></td>
+                <td class="resultado2_13 hidden-column"></td>
+                <td class="resultado3_13 hidden-column"></td>
+                <td class="resultado4_13 hidden-column"></td>
+                <td class="resultado5_13 hidden-column"></td>
+                <td class="resultado6_13 hidden-column"></td>
+                <td class="soma1_13 hidden-column"></td>
+                <td class="soma2_13 hidden-column"></td>
+                <td class="soma3_13 hidden-column"></td>
+                <td class="exclusao_13 hidden-column"></td>
+                <td class="somaFinal_13 hidden-column"></td>
+                <td class="comparar1_13 hidden-column"></td>
+                <td class="comparar2_13 hidden-column"></td>
+                <td class="transportar1_13 hidden-column"></td>
+                <td class="transportar2_13 hidden-column"></td>
+                <td id="indice13" class="indice_13"></td>
+                <td class="transportar3_13 hidden-column"></td>
+                <td class="éNãoDisp_13 hidden-column"></td>
+                <td class="transportarFinal_13 hidden-column"></td>
+                <td class="ipa_13 hidden-column"></td>
+            </tr>
+
+            <tr>
+                <td>FGA</td>
+                <td id="Inputvalor1_14"><input class="valor_14" /></td>
+                <td id="Inputvalor2_14"><input class="valor_14" /></td>
+                <td id="Inputvalor3_14"><input class="valor_14" /></td>
+                <td id="Inputvalor4_14"><input class="valor_14" /></td>
+                <td class="resultado1_14 hidden-column"></td>
+                <td class="resultado2_14 hidden-column"></td>
+                <td class="resultado3_14 hidden-column"></td>
+                <td class="resultado4_14 hidden-column"></td>
+                <td class="resultado5_14 hidden-column"></td>
+                <td class="resultado6_14 hidden-column"></td>
+                <td class="soma1_14 hidden-column"></td>
+                <td class="soma2_14 hidden-column"></td>
+                <td class="soma3_14 hidden-column"></td>
+                <td class="exclusao_14 hidden-column"></td>
+                <td class="somaFinal_14 hidden-column"></td>
+                <td class="comparar1_14 hidden-column"></td>
+                <td class="comparar2_14 hidden-column"></td>
+                <td class="transportar1_14 hidden-column"></td>
+                <td class="transportar2_14 hidden-column"></td>
+                <td id="indice14" class="indice_14"></td>
+                <td class="transportar3_14 hidden-column"></td>
+                <td class="éNãoDisp_14 hidden-column"></td>
+                <td class="transportarFinal_14 hidden-column"></td>
+                <td class="ipa_14 hidden-column"></td>
+            </tr>
+        </tbody>
+
+
+        <tr>
+            <td>IP Acumulado</td>
+            <td id="ipaFinal" colspan="24" class="ipa_final"></td>
+        </tr>
+
+        <tr>
+            <td>PP</td>
+            <td id="ppFinal" colspan="24" class="porcentagem_ipa_final"></td>
+        </tr>
+
+
+    </table>
+    <button type="submit">Enviar</button>
+</form>
+    <script src="../javascript/script.js"></script>
+</div>
+
+<p id="Inputvalor1_1"></p>
+
+
+<div class="buttons">
+    <button class="button-save">Salvar</button>
+    <button class="button-generate">Gerar</button>
+    
+    <div class="full-box">
+        <input type="submit" id="btn-submit" value="Cadastrar">
+    </div>
+</div>
+
+
+<script>
+
+console.log(Inputvalor1_14);
+
+async function cadastrarDados(event) {
+    event.preventDefault();
+
+    const inputs = [];
+    const indices = [];
+
+    for (let i = 0; i <= 14; i++) {
+        inputs.push([
+            document.getElementById(`Inputvalor1_${i}`).value.trim(),
+            document.getElementById(`Inputvalor2_${i}`).value.trim(),
+            document.getElementById(`Inputvalor3_${i}`).value.trim(),
+            document.getElementById(`Inputvalor4_${i}`).value.trim()
+        ]);
+        indices.push(document.getElementById(`indice${i}`).value.trim());
+    }
+
+    const IPA = document.getElementById("ipaFinal").innerText.trim();
+    const PP = document.getElementById("ppFinal").innerText.trim();
+
+    const url = '/calculo';
+
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ inputs, indices, IPA, PP })
+        });
+        const result = await response.json(); // Processar a resposta, se necessário
+        console.log(result);
+    } catch (erro) {
+        console.log("Erro", erro);
+    }
+}
+        
+document.getElementById("Inputvalor1_0").innerText = input1;
+
+</script>
+</body>
+</html>
+                                    
+        
+
